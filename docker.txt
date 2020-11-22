@@ -21,6 +21,7 @@ apt-get install apache2
 service apache2 status
 service apache2 start
 -p NMBR:80
+touch     ----create a file
 exit
 ---
 DOCKERFILE
@@ -33,4 +34,10 @@ CMD apachectl -D FOREGROUND   / ENTRYPOINT apachectl -D FOREGROUND
 FROM httpd 
 COPY . /usr/local/apache2/htdocs/
 ---
-
+DOCKER VOLUMES
+docker volume ls ---all volume present
+docker volume create test
+docker run -it --mount source=test,target=/app -d IMG_NAME 
+docker cd STO_HOCU CONT_ID:GDJE_U_CONT
+----
+MICROSERVICES
