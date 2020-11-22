@@ -1,0 +1,25 @@
+docker pull 
+docker image
+docker ps ----- ps -a -- all containers  
+---
+docker stop $(docker ps -aq)
+docker kill CONT_ID 
+docker rmi -f $(docker images -aq)
+---
+docker run --name NAME -it -d IMAGE_NAME
+---
+docker commit CONT_ID NW_IMG_NM   ---making new image with file we put in 
+
+---
+docker exec -it CONT_ID bash 
+in container
+mkdir
+ls 
+in CONTAINER 
+apt-get update
+apt-get install apache2
+service apache2 status
+service apache2 start
+-p NMBR:80
+exit
+---
