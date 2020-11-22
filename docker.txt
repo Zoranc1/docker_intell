@@ -40,4 +40,19 @@ docker volume create test
 docker run -it --mount source=test,target=/app -d IMG_NAME 
 docker cd STO_HOCU CONT_ID:GDJE_U_CONT
 ----
-MICROSERVICES
+MICROSERVICES DOCKER COMPOSE
+docker-compose --version
+FILE NAME IS ALWAYS doocker-compose.yaml
+docker-compose up -d
+---
+SWARM -Container orchestration
+docker swarm init --adertise-addr=IP. LEADER
+docker swarm join --token ################
+docker service create --name NAME --replica NMB. -p 83:80 IMG_NAME
+docker service scale NAME=NMB.
+docker service rm NAME
+
+----
+
+
+
